@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string defaultValue: 'main', name: 'BRANCH', trim: true
+        string defaultValue: 'master', name: 'BRANCH', trim: true
     }
 
     environment {
