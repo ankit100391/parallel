@@ -1,5 +1,5 @@
 pipeline {
-    agent master
+    agent none
     parameters {
         string defaultValue: 'main', name: 'BRANCH', trim: true
     }
