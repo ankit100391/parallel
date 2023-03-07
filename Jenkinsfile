@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent master
     parameters {
         string defaultValue: 'main', name: 'BRANCH', trim: true
     }
