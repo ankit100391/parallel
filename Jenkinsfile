@@ -1,5 +1,6 @@
 pipeline {
-    agent none
+    agent any
+    echo $NODE_NAME
     parameters {
         string defaultValue: 'main', name: 'BRANCH', trim: true
     }
