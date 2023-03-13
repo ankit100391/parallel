@@ -2,11 +2,15 @@ pipeline {
     agent any
     
     parameters {
-        string defaultValue: 'main', name: 'BRANCH', trim: true
+       string defaultValue: 'main', name: 'BRANCH', trim: true
+        string defaultValue: 'dev', name: 'ENV', trim: true
+        string defaultValue: '0.0.1', name: 'VERSION', trim: true
     }
 
     environment {
         BRANCH_NAME = "${BRANCH}"
+        ENV_NAME = "${ENV}"
+        VERSION = "${VERSION}"
     }
 
     stages {
